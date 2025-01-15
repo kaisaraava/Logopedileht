@@ -1,0 +1,22 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url('./images/Desktop\ -\ 1.png') no-repeat center center fixed;
+    background-size: cover; /* Muudab pildi skaleerituks */
+  }
+
+/* Gridi pöhi */
+/* https://css-tricks.com/snippets/css/complete-guide-grid/ */
+.grid-item:nth-child(2) {
+  grid-area: span 3 / span 2;
+
+  /* This is equivalent to */
+  grid-row-start: span 3;
+  grid-column-start: span 2;
+  grid-row-end: auto;
+  grid-column-end: auto;
+}
